@@ -22,7 +22,7 @@ function Todofile({todo,setTodo,setEdit}) {
   return (
     <div> 
     {todo.map((todo)=>(<li id="list-item" key={todo.id}>
-    <input type="text" value={todo.title} id={"list {todo.completed}" ? "complete" : ""} 
+    <input type="text" value={todo.title} id={"list{todo.completed}" ? "complete" : ""} 
     onChange={(event)=>event.preventDefault()}/>
     <div>
     <button id="button-complete" 
